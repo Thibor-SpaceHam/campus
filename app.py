@@ -26,7 +26,7 @@ def conectarCampus():
         port=os.getenv("PGPORT"),
         database=os.getenv("POSTGRES_DB"),
         user=os.getenv("POSTGRES_USER"),
-        password=os.getenv(POSTGRES_PASSWORD")
+        password=os.getenv("POSTGRES_PASSWORD")
     )
     return conexion
 
