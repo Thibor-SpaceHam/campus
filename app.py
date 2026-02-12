@@ -8,7 +8,7 @@ from functools import wraps
 # Cargar variables de entorno desde archivo .env
 load_dotenv()
 
-#app = Flask(__name__)
+app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY", "dev-secret-key-change-in-production")
 
 # Decorador para proteger rutas que requieren autenticación
