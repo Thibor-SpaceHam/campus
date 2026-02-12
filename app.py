@@ -22,11 +22,11 @@ def login_requerido(f):
 
 def conectarCampus():
     conexion = psycopg2.connect(
-        host=os.getenv("DB_HOST"),
-        port=os.getenv("DB_PORT"),
-        database=os.getenv("DB_NAME"),
-        user=os.getenv("DB_USER"),
-        password=os.getenv("DB_PASSWORD")
+        host=os.getenv("PGHOST"),
+        port=os.getenv("PGPORT"),
+        database=os.getenv("POSTGRES_DB"),
+        user=os.getenv("POSTGRES_USER"),
+        password=os.getenv(POSTGRES_PASSWORD")
     )
     return conexion
 
